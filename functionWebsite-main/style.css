@@ -1,0 +1,38 @@
+html {
+	background-image: url(img/wallpaperflare.com_wallpaper.jpg);
+	background-size: cover;
+	height: 100%;
+}
+h1 {
+	font-size: 40px;
+}
+
+button {
+	background-color: rgb(255, 255, 255, 0.65);
+	border-radius: 9px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: white;
+}
+p {
+	color: black;
+}
+
+body {
+	background-color: rgba(255, 255, 255, 0.65);
+	border-radius: 20px;
+	width: 475px;
+	margin: 20px auto;
+	padding: 35px 150px 100px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: justify;
+	text-align-last: center;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
