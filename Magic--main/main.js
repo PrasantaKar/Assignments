@@ -8,34 +8,30 @@ function btnClicked() {
 
 function getResponse(question) {
 	if (question.trim() === "") {
-		response = "Please ask a question...";
+		return "Please ask a question...";
 	} else if (question === "Does a magic 8 ball actually work?") {
-		response = "How dare you doubt me!";
+		return "How dare you doubt me!";
 	} else if (question === "Is JavaScript awesome?") {
-		response = "Of Course!";
+		return "Of Course!";
 	} else {
-		response = randomResponse();
+		return randomResponse();
 	}
-
-	return response;
 }
 
 function randomResponse() {
 	let randomIndex = Math.floor(Math.random() * 5);
 
 	if (randomIndex === 1) {
-		response = "Without a Doubt.";
+		return "Without a Doubt.";
 	} else if (randomIndex === 2) {
-		response = "As I see it, yes.";
+		return "As I see it, yes.";
 	} else if (randomIndex === 3) {
-		response = "Concentrate and ask again.";
+		return "Concentrate and ask again.";
 	} else if (randomIndex === 4) {
-		response = "Don't count on it.";
+		return "Don't count on it.";
 	} else {
-		response = "Outlook not so good.";
+		return "Outlook not so good.";
 	}
-
-	return response;
 }
 
 console.log(randomIndex);
